@@ -1,0 +1,185 @@
+\documentclass[11pt]{article}       % set main text size
+\usepackage[letterpaper,                % set paper size to letterpaper. change to a4paper for resumes outside of North America
+top=0.5in,                          % specify top page margin
+bottom=0.5in,                       % specify bottom page margin
+left=0.5in,                         % specify left page margin
+right=0.5in]{geometry}              % specify right page margin
+  
+
+\usepackage{comment}
+
+
+
+
+
+% XeLaTeX için font ayarları
+\usepackage{fontspec}
+\setmainfont{Calibri}[Path=fonts/, UprightFont=calibri.ttf, BoldFont=calibrib.ttf,
+                      ItalicFont=calibrii.ttf, BoldItalicFont=calibriz.ttf,
+                      LightFont=calibril.ttf, LightItalicFont=calibrili.ttf]
+
+
+                     
+%\usepackage{XCharter}               % set font. comment this line out if you want to use the default LaTeX font Computer Modern
+%\usepackage[T1]{fontenc}            % output encoding
+%\usepackage[utf8]{inputenc}         % input encoding
+\usepackage{enumitem}               % enable lists for bullet points: itemize and \item
+\usepackage[hidelinks]{hyperref}    % format hyperlinks
+\usepackage{titlesec}               % enable section title customization
+\raggedright                        % disable text justification
+\pagestyle{empty}  
+
+% disable page numbering
+% ensure PDF output will be all-Unicode and machine-readable
+%\input{glyphtounicode}
+%\pdfgentounicode=1
+
+% format section headings: bolding, size, white space above and below
+
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{2pt}\titlerule\vspace{-8pt}]
+
+
+
+% format bullet points: size, white space above and below, white space between bullets
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt} %%% Test various topsep values to fix vertical spacing errors
+
+% resume starts here
+\begin{document}
+
+% name
+\centerline{\fontsize{24}{28}\selectfont \textbf{A. Tunahan Dilercan}}
+
+
+
+\vspace{10pt}
+
+
+% contact information
+{\small
+\centerline{%
+  \href{mailto:tunahandilercan@gmail.com}{tunahandilercan@gmail.com} \,|\, 
+  \href{https://tunahandilercan.com.tr}{tunahandilercan.com.tr} \,|\, 
+  \href{https://github.com/tunahandilercan}{github.com/tunahandilercan} \,|\, 
+  \href{https://linkedin.com/in/tunahandilercan}{linkedin.com/in/tunahandilercan}%
+}}
+
+
+
+
+
+
+%\vspace{-10pt}
+
+
+\begin{comment}
+
+
+% experience section
+\section*{EXPERIENCE}
+\textbf{UZMAR Shipyard} \hfill \textbf{Kocaeli, TR |} Jun. 2022 -- Sep. 2022 \\
+Intern Engineer \\
+\vspace{-9pt}
+\begin{itemize}
+  \item 12\% faster drafting by building parametric templates for 30\,+ tug components in SolidWorks
+  \item Reduced rework requests by ~20\% by validating mounting brackets with hand-calculation sanity checks and quick FEA (Abaqus) before release
+  \item Improved on-time work orders by ~15\% by standardizing BOMs and part numbering across work packages with production and QA
+\end{itemize}
+
+\textbf{Bosch} \hfill \textbf{Istanbul, TR |} Jul. 2021 -- Sep. 2021 \\
+Intern Engineer \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Assisted in development of embedded system tests for automotive components, identifying and documenting 12+ software bugs during validation
+  \item Automated routine data collection with Python scripts, reducing manual reporting time by 40\%
+  \item Collaborated with senior engineers to analyze sensor data, contributing to performance improvements in prototype units
+\end{itemize}
+
+\textbf{Tersa Shipyard} \hfill \textbf{Yalova, TR |} Jun. 2020 -- Aug. 2020 \\
+Intern Engineer \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Supported mechanical design team in drafting and reviewing CAD models of ship components using SolidWorks
+  \item Conducted finite element analysis (FEA) checks on steel structures, ensuring compliance with safety standards
+  \item Prepared technical documentation and assisted in quality inspections, improving on-time reporting accuracy by 25\%
+\end{itemize}
+
+\end{comment}
+
+%\vspace{-6.5pt}
+\vspace{-10pt}
+
+% education section
+\section*{EDUCATION}
+\textbf{Isparta University of Applied Sciences} \hfill \textbf{Isparta, TR |} Expected 2027 \\
+Bachelor of Science in Mechatronics Engineering \\[6pt]
+
+\textbf{Istanbul University} \hfill \textbf{Istanbul, TR |} Expected 2028 \\
+Bachelor of Science in Management Information Systems
+
+
+
+
+% \textbf{Job Title,} \href{https://www.fstl1992.com/}{Company} -- City, ST \hfill XXXX -- XXXX \\
+% \vspace{-9pt}
+
+\vspace{-6.5pt}
+
+
+% projects section
+\section*{PROJECTS}
+
+\textbf{Voice-to-Text Education App} \hfill 
+\href{https://play.google.com/store/apps/dev?id=8414973691889516106}{\textbf{Hanova on Google Play}} \\[3pt]
+\begin{minipage}{0.75\textwidth}
+Built a mobile app that converts speech to text and generates AI-based summaries, flashcards, and quizzes. 
+Enhanced studying efficiency with speech recognition and AI-based content generation.
+\end{minipage} \\[6pt]
+
+\textbf{Prompt to PDF} \hfill 
+\href{https://chatgpt.com/g/g-6790c6ff33988191a78371fbc1267981-prompt-to-pdf}{\textbf{chatgpt.com/prompt-to-pdf}} \\[3pt]
+\begin{minipage}{0.75\textwidth}
+Created a ChatGPT plugin that converts LaTeX texts, formulas, and equations into professional PDFs. 
+Ensured accurate formatting for technical and academic documents.
+\end{minipage} \\[6pt]
+
+
+
+
+
+
+
+% certifications section
+\section*{CERTIFICATIONS}
+\textbf{Siber Vatan Bootcamp} \hfill Dec. 2023 \\
+T.C. Ministry of Industry and Technology \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Selected through a competitive exam and completed 176 hours of face-to-face training
+  \item Curriculum covered White Hat Hacking, Linux, Penetration Testing, Malware Analysis \& Reverse Engineering, and Applied Web Security
+\end{itemize}
+
+
+
+% alternate formatting for projects section
+% \section*{Projects}
+% \begin{itemize}
+%   \item \textbf{QuantSoftware Toolkit:} Open source Python library for data analysis and machine learning for finance
+%   \item \textbf{GitHub Visualization:} Data visualization of Git Log data using D3 to analyze project trends over time
+%   \item \textbf{Recommendation System:} Music and movie recommender systems using collaborative filtering on public datasets
+%   \item \textbf{Mac Setup:} Book that gives step by step instructions on setting up developer environment on Mac OS
+% \end{itemize}
+
+
+\vspace{-6.5pt}
+
+% skills section
+\section*{SKILLS}
+\textbf{Programming Languages:} Python, Kotlin, C, Java \\
+\textbf{Frameworks \& Libraries:} Flutter \\
+\textbf{Concepts \& Methodologies:}  Machine Learning, Mobile App Development \\
+\textbf{Tools \& Technologies:} SQL, Git, Docker, Linux \\
+\textbf{Languages:} English (B2), Turkish (Native)
+
+\end{document}
+

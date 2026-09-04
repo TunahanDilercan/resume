@@ -1,0 +1,160 @@
+\documentclass[11pt]{article}       % ana metin boyutu
+\usepackage[letterpaper,                % kağıt boyutu
+top=0.5in,                          % üst kenar boşluğu
+bottom=0.5in,                       % alt kenar boşluğu
+left=0.5in,                         % sol kenar boşluğu
+right=0.5in]{geometry}              % sağ kenar boşluğu
+
+
+\usepackage{comment}
+
+
+% XeLaTeX için font ayarları
+\usepackage{fontspec}
+\setmainfont{Calibri}[Path=fonts/, UprightFont=calibri.ttf, BoldFont=calibrib.ttf,
+                      ItalicFont=calibrii.ttf, BoldItalicFont=calibriz.ttf,
+                      LightFont=calibril.ttf, LightItalicFont=calibrili.ttf]
+
+
+%\usepackage{XCharter}               % varsayılan font yerine kullanılabilir
+%\usepackage[T1]{fontenc}            % çıktı kodlaması
+%\usepackage[utf8]{inputenc}         % giriş kodlaması
+\usepackage{enumitem}               % madde işaretli listeler için
+\usepackage[hidelinks]{hyperref}    % hyperlink biçimlendirme
+\usepackage{titlesec}               % bölüm başlığı özelleştirme
+\raggedright                        % metin hizalamasını kapat
+\pagestyle{empty}                   % sayfa numaralandırmayı kapat
+
+
+% bölüm başlıkları biçimi: kalın, boyut, üst-alt boşluk
+\titleformat{\section}{\bfseries\large}{}{0pt}{}[\vspace{2pt}\titlerule\vspace{-8pt}]
+
+
+% madde işaretleri biçimi
+\renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$}
+\setlist[itemize]{itemsep=-2pt, leftmargin=12pt, topsep=7pt}
+
+% CV başlangıcı
+\begin{document}
+
+% isim
+\centerline{\fontsize{24}{28}\selectfont \textbf{A. Tunahan Dilercan}}
+
+\vspace{10pt}
+
+% iletişim bilgileri
+{\small
+\centerline{+90 5XX XXX XX XX \,|\, \href{mailto:tunahandilercan@gmail.com}{tunahandilercan@gmail.com} \,|\, \href{https://tunahandilercan.com.tr}{tunahandilercan.com.tr}}
+\vspace{3pt}
+\centerline{\href{https://github.com/tunahandilercan}{github.com/tunahandilercan} \,|\, \href{https://linkedin.com/in/tunahandilercan}{linkedin.com/in/tunahandilercan}}
+}
+
+
+\begin{comment}
+
+% Aşağıdaki staj deneyimleri ileride kullanılmak üzere yorum satırı olarak tutulmaktadır.
+
+% deneyim bölümü
+\section*{DENEYİM}
+\textbf{UZMAR Tersanesi} \hfill \textbf{Kocaeli, TR |} Haz. 2022 -- Eyl. 2022 \\
+Stajyer Mühendis \\
+\vspace{-9pt}
+\begin{itemize}
+  \item SolidWorks'te 30+ römorkör bileşeni için parametrik şablonlar oluşturarak çizim süresini \%12 azalttı
+  \item Bağlantı braketlerini el hesaplamaları ve hızlı FEA (Abaqus) ile doğrulayarak revizyon taleplerini yaklaşık \%20 düşürdü
+  \item Üretim ve kalite ekipleriyle iş paketleri arasında BOM ve parça numaralandırmasını standartlaştırarak zamanında teslimat oranını yaklaşık \%15 artırdı
+\end{itemize}
+
+\textbf{Bosch} \hfill \textbf{İstanbul, TR |} Tem. 2021 -- Eyl. 2021 \\
+Stajyer Mühendis \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Otomotiv bileşenleri için gömülü sistem testlerinin geliştirilmesinde görev alarak doğrulama sürecinde 12+ yazılım hatası tespit ve dokümante etti
+  \item Python betikleri ile rutin veri toplama işlemlerini otomatikleştirerek manuel raporlama süresini \%40 azalttı
+  \item Kıdemli mühendislerle birlikte sensör verilerini analiz ederek prototip ünitelerin performans iyileştirmelerine katkı sağladı
+\end{itemize}
+
+\textbf{Tersa Tersanesi} \hfill \textbf{Yalova, TR |} Haz. 2020 -- Ağu. 2020 \\
+Stajyer Mühendis \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Mekanik tasarım ekibine SolidWorks ile gemi bileşenlerinin CAD modellerinin çizimi ve gözden geçirilmesinde destek verdi
+  \item Çelik yapılar üzerinde sonlu elemanlar analizi (FEA) kontrolleri yaparak güvenlik standartlarına uygunluğu doğruladı
+  \item Teknik dokümantasyon hazırlayarak ve kalite denetimlerine katkı sağlayarak zamanında raporlama doğruluğunu \%25 artırdı
+\end{itemize}
+
+\end{comment}
+
+
+\vspace{-10pt}
+
+% deneyim bölümü
+\section*{DENEYİM}
+\textbf{Türkiye Satranç Federasyonu} \hfill \textbf{Türkiye |} Nis. 2026 -- Devam ediyor \\
+Aday Satranç Hakemi (Yarı Zamanlı) \\
+\vspace{-9pt}
+\begin{itemize}
+  \item 2015'ten bu yana lisanslı satranç sporcusu olarak edindiği tecrübeyi profesyonel düzeye taşıyarak Türkiye Satranç Federasyonu'nun resmi eğitim ve sınavını başarıyla tamamladı
+  \item Resmi turnuvalarda hakem olarak görev alarak FIDE satranç kurallarının uygulanmasını sağlıyor
+\end{itemize}
+
+
+\vspace{-6.5pt}
+
+% eğitim bölümü
+\section*{EĞİTİM}
+\textbf{Isparta Uygulamalı Bilimler Üniversitesi} \hfill \textbf{Isparta, TR |} Beklenen Mezuniyet: 2027 \\
+Mekatronik Mühendisliği (Lisans) \\[6pt]
+
+\textbf{İstanbul Üniversitesi} \hfill \textbf{Online |} Beklenen Mezuniyet: 2028 \\
+Yönetim Bilişim Sistemleri (İkinci Üniversite) \\[6pt]
+
+\textbf{Şehit Nurullah Sabırer Fen Lisesi} \hfill \textbf{Aksaray, TR |} 2018--2022
+
+
+\vspace{-6.5pt}
+
+% projeler bölümü
+\section*{PROJELER}
+
+\textbf{Eduroid AI -- Sesli Eğitim Uygulaması} \hfill
+\href{https://play.google.com/store/apps/dev?id=8414973691889516106}{\textbf{Google Play}} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Ders ve toplantı seslerini metne dönüştüren, ardından yapay zekâ ile otomatik özet, flashcard ve test soruları üreten mobil uygulama geliştirdi
+  \item Ses tanıma teknolojisi ile yapay zekâ tabanlı içerik üretimini birleştirerek öğrencilerin çalışma verimliliğini artıran uçtan uca bir çözüm sundu
+\end{itemize}
+
+\textbf{Prompt to PDF -- ChatGPT Eklentisi} \hfill
+\href{https://chatgpt.com/g/g-6790c6ff33988191a78371fbc1267981-prompt-to-pdf}{\textbf{ChatGPT GPT Store}} \\
+\vspace{-9pt}
+\begin{itemize}
+  \item LaTeX formatındaki metinleri, matematiksel formülleri ve denklemleri profesyonel kalitede PDF belgelerine dönüştüren özel bir GPT eklentisi geliştirdi
+  \item Akademik ve teknik dokümanlar için doğru biçimlendirme, tutarlı tipografi ve yüksek çıktı kalitesi sağladı
+\end{itemize}
+
+
+\vspace{-6.5pt}
+
+% sertifikalar bölümü
+\section*{SERTİFİKALAR}
+\textbf{\href{https://drive.google.com/file/d/1SBd8-eo2GcmsAc0Q561PigSK4FLun7_R/view?usp=sharing}{Siber Vatan Bootcamp}} \hfill Aralık 2023 \\
+T.C. Sanayi ve Teknoloji Bakanlığı \\
+\vspace{-9pt}
+\begin{itemize}
+  \item Sınavla seçilerek programa kabul edildi ve 176 saatlik yüz yüze teknik eğitimi başarıyla tamamladı
+  \item Eğitim; Beyaz Şapkalı Hacker, Temel Linux, Sızma Testi, Zararlı Yazılım Analizi \& Tersine Mühendislik ve Uygulamalı Web Güvenliği konularını kapsadı
+\end{itemize}
+
+
+\vspace{-6.5pt}
+
+% yetenekler bölümü
+\section*{TEKNİK BECERİLER}
+\textbf{Programlama Dilleri:} Python, Kotlin, Dart, C, Java \\
+\textbf{Çatılar \& Kütüphaneler:} Flutter, Firebase, REST API, State Management \\
+\textbf{Teknik İlgi Alanları:} Mobil Uygulama Geliştirme, Makine Öğrenmesi \\
+\textbf{Araçlar \& Teknolojiler:} SQL, Git, Docker, Linux \\
+\textbf{Yabancı Diller:} Türkçe (Ana Dil), İngilizce (B2)
+
+\end{document}

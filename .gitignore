@@ -1,0 +1,12 @@
+# Local files
+.vscode/
+fonts/
+*.pdf
+
+# LaTeX output
+*.aux
+*.log
+*.out
+*.synctex.gz
+*.fls
+*.fdb_latexmk
